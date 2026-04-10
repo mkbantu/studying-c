@@ -3,7 +3,7 @@
 int main() {
 	char name[50];
 	int age;
-	printf("=======enter your name====== \n");
+	printf("=======Enter your name====== \n");
 	scanf("%[^\n]",&name);
 	printf("your name is %s\n",name);
 	printf("=======enter your age =======\n");
