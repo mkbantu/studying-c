@@ -1,16 +1,15 @@
 #include<stdio.h>
 int main(){
-   int age;
-   printf("enter your age:\n");
-   scanf("%d",&age);
-		if(age>=18)
-			{
-			printf("you are allowed to vote\n");
-			}
-		else
-			{
-			printf("you are not allowed\n");
-			
-			}
+  int num;
+  int div;
+  printf("Enter a Number and divisor:\n");
+  scanf("%d %d",&num,&div);
+  if(div!=0){
+	printf("the quotient is:%d",num/div);
+
+  }
+  
+
    return 0;	
 }
+
