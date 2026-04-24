@@ -2,10 +2,11 @@
 int main(){
         
         for(int i=0;i<=100;i++){
-            if(i<=50 && i>=40){
-                continue;
+            if(i=80){
+                return 0;
             }
         printf("%d\n",i);
         }
+        printf("this is the end======");
     return 0;
 }
