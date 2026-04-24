@@ -4,7 +4,7 @@
 int main() {
     double a, b, c, d, x1, x2, r, i;
 
-    printf("Enter coefficients a, b, and c: ");
+    printf("Enter coefficients a, b, and c:\n ");
     scanf("%lf %lf %lf", &a, &b, &c);
 
     if (a == 0) {
