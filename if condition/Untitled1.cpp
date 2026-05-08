@@ -1,40 +1,21 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
-    int age, marks;
-    char sex;
-    char nationality[50];
+    int rows;
 
-    printf("\nPlease enter your age: ");
-    scanf("%d", &age);
+    printf("Enter number of rows: ");
+    scanf("%d", &rows);
 
-    printf("\nPlease enter your marks: ");
-    scanf("%d", &marks);
-
-    printf("\nPlease enter your sex (F or M): ");
-    scanf(" %c", &sex);   // space before %c is important
-
-    printf("\nPlease enter your nationality: ");
-    scanf("%s", nationality);
-
-    if (age >= 30) {
-        if (marks >= 50) {
-            if (sex == 'F' || sex == 'f') {
-                if (strcmp(nationality, "european") == 0) {
-                    printf("recruited");
-                } else {
-                    printf("you are not recruited");
-                }
-            } else {
-                printf("you are not recruited");
-            }
-        } else {
-            printf("you are not recruited");
+    for (int i = 1; i <= rows; i++) {
+        for (int j = i; j < rows; j++) {
+            printf(" ");
         }
-    } else {
-        printf("you are not recruited");
+        for (int k = 1; k <=i; k++) {
+            printf("*");
+        }
+        printf("\n");
     }
 
     return 0;
 }
+

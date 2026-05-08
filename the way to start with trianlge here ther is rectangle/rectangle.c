@@ -1,15 +1,19 @@
 #include<stdio.h>
-int main(){
+void main(){
 
     int j;
     int i;
-    for(i=0;i<10;i++){
+    int k;
+    for(i=0;i<=10;i++){
         for(j=0;j<(10-i);j++){
-            printf(" %d",i);
-            
+            printf("  ");
+        }
+        for (k=0;k<=i*2;k++){
+        	
+		printf("*")  ; 
         }
     printf("\n");
 
     }
-return 0;
+getchar();
 } 
