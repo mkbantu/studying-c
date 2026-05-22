@@ -5,6 +5,8 @@ int subtract(int a, int b);
 int multiply(int a, int b);
 float divide(int a, int b);
 
+/* Entry point: reads two integers from the user, then prints the result
+   of all four arithmetic operations. Division is skipped if y is zero. */
 int main() {
     int x, y;
     printf("Enter first number: ");
@@ -24,18 +26,22 @@ int main() {
     return 0;
 }
 
+/* Returns the sum of a and b. */
 int add(int a, int b) {
     return a + b;
 }
 
+/* Returns the difference of a minus b. */
 int subtract(int a, int b) {
     return a - b;
 }
 
+/* Returns the product of a and b. */
 int multiply(int a, int b) {
     return a * b;
 }
 
+/* Returns a divided by b as a float. Caller must ensure b != 0. */
 float divide(int a, int b) {
     return (float)a / b;
 }
